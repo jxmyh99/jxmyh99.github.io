@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>中文转拼音 | 小白明月</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="在移动端有很坑要填，这里只是收集我在工作中遇到的一些移动端的坑，在此文章中记录下，也希望能给后来人解决问题">
+<meta name="keywords" content="插件收集">
+<meta property="og:type" content="article">
+<meta property="og:title" content="中文转拼音">
+<meta property="og:url" content="http://www.33u3.com/2016/01/07/中文转拼音/index.html">
+<meta property="og:site_name" content="小白明月">
+<meta property="og:description" content="在移动端有很坑要填，这里只是收集我在工作中遇到的一些移动端的坑，在此文章中记录下，也希望能给后来人解决问题">
+<meta property="og:updated_time" content="2017-07-17T08:01:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="中文转拼音">
+<meta name="twitter:description" content="在移动端有很坑要填，这里只是收集我在工作中遇到的一些移动端的坑，在此文章中记录下，也希望能给后来人解决问题">
+  
+    <link rel="alternative" href="/atom.xml" title="小白明月" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">明月寒</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">一个小白前端进击之路</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/categories/技术研究/">技术研究</a></li>
+                        
+                            <li><a href="/categories/book/">静心阅读</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/categories/随笔/">生活随笔</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/css3/" style="font-size: 20px;">css3</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/插件收集/" style="font-size: 10px;">插件收集</a> <a href="/tags/移动端/" style="font-size: 10px;">移动端</a> <a href="/tags/问题收集/" style="font-size: 10px;">问题收集</a>
+                    </div>
+                </section>
+                
+                
+                
+
+                
+                
+                <section class="switch-part switch-part3">
+                
+                    <div id="js-aboutme">明月寒, 前端初学, 一路向大牛进发.</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">明月寒</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">明月寒</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">一个小白前端进击之路</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/categories/技术研究/">技术研究</a></li>
+                
+                    <li><a href="/categories/book/">静心阅读</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/categories/随笔/">生活随笔</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-中文转拼音" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/01/07/中文转拼音/" class="article-date">
+      <time datetime="2016-01-07T03:37:00.000Z" itemprop="datePublished">2016-01-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      中文转拼音
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/技术研究/">技术研究</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/插件收集/">插件收集</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>中文转拼音的一个库</p>
+<h3 id="中文转拼音"><a href="#中文转拼音" class="headerlink" title="中文转拼音"></a>中文转拼音</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> NAME = $(<span class="string">".js-info-name"</span>);</div><div class="line"><span class="keyword">var</span> SPELLNAME = $(<span class="string">".js-pinyin-area"</span>);</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">ConvertPinyin</span>(<span class="params">l1</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> l2 = l1.length;</div><div class="line">    <span class="keyword">var</span> I1 = <span class="string">""</span>;</div><div class="line">    <span class="keyword">var</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"[a-zA-Z0-9\\- ]"</span>);</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; l2; i++) &#123;</div><div class="line">        <span class="keyword">var</span> val = l1.substr(i, <span class="number">1</span>);</div><div class="line">        <span class="keyword">var</span> name = arraySearch(val, PinYin);</div><div class="line">        <span class="keyword">if</span> (reg.test(val)) &#123;</div><div class="line">            I1 += val</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (name !== <span class="literal">false</span>) &#123;</div><div class="line">            I1 += name</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    I1 = I1.replace(<span class="regexp">/ /g</span>, <span class="string">"-"</span>);</div><div class="line">    <span class="keyword">while</span> (I1.indexOf(<span class="string">"--"</span>) &gt; <span class="number">0</span>) &#123;</div><div class="line">        I1 = I1.replace(<span class="string">"--"</span>, <span class="string">"-"</span>)</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> I1</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">arraySearch</span>(<span class="params">l1, l2</span>) </span>&#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> name <span class="keyword">in</span> PinYin) &#123;</div><div class="line">        <span class="keyword">if</span> (PinYin[name].indexOf(l1) != <span class="number">-1</span>) &#123;</div><div class="line">            <span class="keyword">return</span> ucfirst(name)</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="literal">false</span></div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">ucfirst</span>(<span class="params">l1</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (l1.length &gt; <span class="number">0</span>) &#123;</div><div class="line">        <span class="keyword">var</span> first = l1.substr(<span class="number">0</span>, <span class="number">1</span>).toUpperCase();</div><div class="line">        <span class="keyword">var</span> spare = l1.substr(<span class="number">1</span>, l1.length).toUpperCase();</div><div class="line">        <span class="keyword">return</span> first + spare + <span class="string">"P_P"</span></div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getPing</span>(<span class="params">zn,pin</span>)</span>&#123;</div><div class="line">    zn.blur(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> pinyin, _list = pin;</div><div class="line">    <span class="keyword">try</span> &#123;</div><div class="line">        pinyin = ConvertPinyin($(<span class="keyword">this</span>).val())</div><div class="line">    &#125; <span class="keyword">catch</span>(err) &#123;</div><div class="line">        <span class="built_in">console</span>.log(err)</div><div class="line">    &#125;</div><div class="line">    pinyin = pinyin.split(<span class="string">"P_P"</span>);</div><div class="line">    pinyin.pop();</div><div class="line">    <span class="keyword">var</span> len = pinyin.length;</div><div class="line">    <span class="keyword">if</span> (len &lt; <span class="number">1</span>) &#123;</div><div class="line">        _list = <span class="string">""</span></div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (i === <span class="number">0</span>) &#123;</div><div class="line">                _list.val(pinyin[i])</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                _list.val(_list.val()+<span class="string">" "</span>+pinyin[i])</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    SPELLNAME.html(_list)</div><div class="line">        <span class="keyword">if</span>(!(<span class="regexp">/[\u4e00-\u9fa5]&#123;2,4&#125;/gm</span>.test( $(<span class="string">"#userName"</span>).val())))&#123;</div><div class="line">            alert(<span class="number">1</span>)</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="拼音的库"><a href="#拼音的库" class="headerlink" title="拼音的库"></a>拼音的库</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div><div class="line">340</div><div class="line">341</div><div class="line">342</div><div class="line">343</div><div class="line">344</div><div class="line">345</div><div class="line">346</div><div class="line">347</div><div class="line">348</div><div class="line">349</div><div class="line">350</div><div class="line">351</div><div class="line">352</div><div class="line">353</div><div class="line">354</div><div class="line">355</div><div class="line">356</div><div class="line">357</div><div class="line">358</div><div class="line">359</div><div class="line">360</div><div class="line">361</div><div class="line">362</div><div class="line">363</div><div class="line">364</div><div class="line">365</div><div class="line">366</div><div class="line">367</div><div class="line">368</div><div class="line">369</div><div class="line">370</div><div class="line">371</div><div class="line">372</div><div class="line">373</div><div class="line">374</div><div class="line">375</div><div class="line">376</div><div class="line">377</div><div class="line">378</div><div class="line">379</div><div class="line">380</div><div class="line">381</div><div class="line">382</div><div class="line">383</div><div class="line">384</div><div class="line">385</div><div class="line">386</div><div class="line">387</div><div class="line">388</div><div class="line">389</div><div class="line">390</div><div class="line">391</div><div class="line">392</div><div class="line">393</div><div class="line">394</div><div class="line">395</div><div class="line">396</div><div class="line">397</div><div class="line">398</div><div class="line">399</div><div class="line">400</div><div class="line">401</div><div class="line">402</div><div class="line">403</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> PinYin = &#123;</div><div class="line">            <span class="attr">a</span>: <span class="string">"啊阿锕"</span>,</div><div class="line">            <span class="attr">ai</span>: <span class="string">"埃挨哎唉哀皑癌蔼矮艾碍爱隘诶捱嗳嗌嫒瑷暧砹锿霭"</span>,</div><div class="line">            <span class="attr">an</span>: <span class="string">"鞍氨安俺按暗岸胺案谙埯揞犴庵桉铵鹌顸黯"</span>,</div><div class="line">            <span class="attr">ang</span>: <span class="string">"肮昂盎"</span>,</div><div class="line">            <span class="attr">ao</span>: <span class="string">"凹敖熬翱袄傲奥懊澳坳拗嗷噢岙廒遨媪骜聱螯鏊鳌鏖"</span>,</div><div class="line">            <span class="attr">ba</span>: <span class="string">"芭捌扒叭吧笆八疤巴拔跋靶把耙坝霸罢爸茇菝萆捭岜灞杷钯粑鲅魃"</span>,</div><div class="line">            <span class="attr">bai</span>: <span class="string">"白柏百摆佰败拜稗薜掰鞴"</span>,</div><div class="line">            <span class="attr">ban</span>: <span class="string">"斑班搬扳般颁板版扮拌伴瓣半办绊阪坂豳钣瘢癍舨"</span>,</div><div class="line">            <span class="attr">bang</span>: <span class="string">"邦帮梆榜膀绑棒磅蚌镑傍谤蒡螃"</span>,</div><div class="line">            <span class="attr">bao</span>: <span class="string">"苞胞包褒雹保堡饱宝抱报暴豹鲍爆勹葆宀孢煲鸨褓趵龅"</span>,</div><div class="line">            <span class="attr">bo</span>: <span class="string">"剥薄玻菠播拨钵波博勃搏铂箔伯帛舶脖膊渤泊驳亳蕃啵饽檗擘礴钹鹁簸跛"</span>,</div><div class="line">            <span class="attr">bei</span>: <span class="string">"杯碑悲卑北辈背贝钡倍狈备惫焙被孛陂邶埤蓓呗怫悖碚鹎褙鐾"</span>,</div><div class="line">            <span class="attr">ben</span>: <span class="string">"奔苯本笨畚坌锛"</span>,</div><div class="line">            <span class="attr">beng</span>: <span class="string">"崩绷甭泵蹦迸唪嘣甏"</span>,</div><div class="line">            <span class="attr">bi</span>: <span class="string">"逼鼻比鄙笔彼碧蓖蔽毕毙毖币庇痹闭敝弊必辟壁臂避陛匕仳俾芘荜荸吡哔狴庳愎滗濞弼妣婢嬖璧贲畀铋秕裨筚箅篦舭襞跸髀"</span>,</div><div class="line">            <span class="attr">bian</span>: <span class="string">"鞭边编贬扁便变卞辨辩辫遍匾弁苄忭汴缏煸砭碥稹窆蝙笾鳊"</span>,</div><div class="line">            <span class="attr">biao</span>: <span class="string">"标彪膘表婊骠飑飙飚灬镖镳瘭裱鳔"</span>,</div><div class="line">            <span class="attr">bie</span>: <span class="string">"鳖憋别瘪蹩鳘"</span>,</div><div class="line">            <span class="attr">bin</span>: <span class="string">"彬斌濒滨宾摈傧浜缤玢殡膑镔髌鬓"</span>,</div><div class="line">            <span class="attr">bing</span>: <span class="string">"兵冰柄丙秉饼炳病并禀邴摒绠枋槟燹"</span>,</div><div class="line">            <span class="attr">bu</span>: <span class="string">"捕卜哺补埠不布步簿部怖拊卟逋瓿晡钚醭"</span>,</div><div class="line">            <span class="attr">ca</span>: <span class="string">"擦嚓礤"</span>,</div><div class="line">            <span class="attr">cai</span>: <span class="string">"猜裁材才财睬踩采彩菜蔡"</span>,</div><div class="line">            <span class="attr">can</span>: <span class="string">"餐参蚕残惭惨灿骖璨粲黪"</span>,</div><div class="line">            <span class="attr">cang</span>: <span class="string">"苍舱仓沧藏伧"</span>,</div><div class="line">            <span class="attr">cao</span>: <span class="string">"操糙槽曹草艹嘈漕螬艚"</span>,</div><div class="line">            <span class="attr">ce</span>: <span class="string">"厕策侧册测刂帻恻"</span>,</div><div class="line">            <span class="attr">ceng</span>: <span class="string">"层蹭噌"</span>,</div><div class="line">            <span class="attr">cha</span>: <span class="string">"插叉茬茶查碴搽察岔差诧猹馇汊姹杈楂槎檫钗锸镲衩"</span>,</div><div class="line">            <span class="attr">chai</span>: <span class="string">"拆柴豺侪茈瘥虿龇"</span>,</div><div class="line">            <span class="attr">chan</span>: <span class="string">"搀掺蝉馋谗缠铲产阐颤冁谄谶蒇廛忏潺澶孱羼婵嬗骣觇禅镡裣蟾躔"</span>,</div><div class="line">            <span class="attr">chang</span>: <span class="string">"昌猖场尝常长偿肠厂敞畅唱倡伥鬯苌菖徜怅惝阊娼嫦昶氅鲳"</span>,</div><div class="line">            <span class="attr">chao</span>: <span class="string">"超抄钞朝嘲潮巢吵炒怊绉晁耖"</span>,</div><div class="line">            <span class="attr">che</span>: <span class="string">"车扯撤掣彻澈坼屮砗"</span>,</div><div class="line">            <span class="attr">chen</span>: <span class="string">"郴臣辰尘晨忱沉陈趁衬称谌抻嗔宸琛榇肜胂碜龀"</span>,</div><div class="line">            <span class="attr">cheng</span>: <span class="string">"撑城橙成呈乘程惩澄诚承逞骋秤埕嵊徵浈枨柽樘晟塍瞠铖裎蛏酲"</span>,</div><div class="line">            <span class="attr">chi</span>: <span class="string">"吃痴持匙池迟弛驰耻齿侈尺赤翅斥炽傺墀芪茌搋叱哧啻嗤彳饬沲媸敕胝眙眵鸱瘛褫蚩螭笞篪豉踅踟魑"</span>,</div><div class="line">            <span class="attr">chong</span>: <span class="string">"充冲虫崇宠茺忡憧铳艟"</span>,</div><div class="line">            <span class="attr">chou</span>: <span class="string">"抽酬畴踌稠愁筹仇绸瞅丑俦圳帱惆溴妯瘳雠鲋"</span>,</div><div class="line">            <span class="attr">chu</span>: <span class="string">"臭初出橱厨躇锄雏滁除楚础储矗搐触处亍刍憷绌杵楮樗蜍蹰黜"</span>,</div><div class="line">            <span class="attr">chuan</span>: <span class="string">"揣川穿椽传船喘串掾舛惴遄巛氚钏镩舡"</span>,</div><div class="line">            <span class="attr">chuang</span>: <span class="string">"疮窗幢床闯创怆"</span>,</div><div class="line">            <span class="attr">chui</span>: <span class="string">"吹炊捶锤垂陲棰槌"</span>,</div><div class="line">            <span class="attr">chun</span>: <span class="string">"春椿醇唇淳纯蠢促莼沌肫朐鹑蝽"</span>,</div><div class="line">            <span class="attr">chuo</span>: <span class="string">"戳绰蔟辶辍镞踔龊"</span>,</div><div class="line">            <span class="attr">ci</span>: <span class="string">"疵茨磁雌辞慈瓷词此刺赐次荠呲嵯鹚螅糍趑"</span>,</div><div class="line">            <span class="attr">cong</span>: <span class="string">"聪葱囱匆从丛偬苁淙骢琮璁枞"</span>,</div><div class="line">            <span class="attr">cu</span>: <span class="string">"凑粗醋簇猝殂蹙"</span>,</div><div class="line">            <span class="attr">cuan</span>: <span class="string">"蹿篡窜汆撺昕爨"</span>,</div><div class="line">            <span class="attr">cui</span>: <span class="string">"摧崔催脆瘁粹淬翠萃悴璀榱隹"</span>,</div><div class="line">            <span class="attr">cun</span>: <span class="string">"村存寸磋忖皴"</span>,</div><div class="line">            <span class="attr">cuo</span>: <span class="string">"撮搓措挫错厝脞锉矬痤鹾蹉躜"</span>,</div><div class="line">            <span class="attr">da</span>: <span class="string">"搭达答瘩打大耷哒嗒怛妲疸褡笪靼鞑"</span>,</div><div class="line">            <span class="attr">dai</span>: <span class="string">"呆歹傣戴带殆代贷袋待逮怠埭甙呔岱迨逯骀绐玳黛"</span>,</div><div class="line">            <span class="attr">dan</span>: <span class="string">"耽担丹单郸掸胆旦氮但惮淡诞弹蛋亻儋卩萏啖澹檐殚赕眈瘅聃箪"</span>,</div><div class="line">            <span class="attr">dang</span>: <span class="string">"当挡党荡档谠凼菪宕砀铛裆"</span>,</div><div class="line">            <span class="attr">dao</span>: <span class="string">"刀捣蹈倒岛祷导到稻悼道盗叨啁忉洮氘焘忑纛"</span>,</div><div class="line">            <span class="attr">de</span>: <span class="string">"德得的锝"</span>,</div><div class="line">            <span class="attr">deng</span>: <span class="string">"蹬灯登等瞪凳邓噔嶝戥磴镫簦"</span>,</div><div class="line">            <span class="attr">di</span>: <span class="string">"堤低滴迪敌笛狄涤翟嫡抵底地蒂第帝弟递缔氐籴诋谛邸坻莜荻嘀娣柢棣觌砥碲睇镝羝骶"</span>,</div><div class="line">            <span class="attr">dian</span>: <span class="string">"颠掂滇碘点典靛垫电佃甸店惦奠淀殿丶阽坫埝巅玷癜癫簟踮"</span>,</div><div class="line">            <span class="attr">diao</span>: <span class="string">"碉叼雕凋刁掉吊钓调轺铞蜩粜貂"</span>,</div><div class="line">            <span class="attr">die</span>: <span class="string">"跌爹碟蝶迭谍叠佚垤堞揲喋渫轶牒瓞褶耋蹀鲽鳎"</span>,</div><div class="line">            <span class="attr">ding</span>: <span class="string">"丁盯叮钉顶鼎锭定订丢仃啶玎腚碇町铤疔耵酊"</span>,</div><div class="line">            <span class="attr">dong</span>: <span class="string">"东冬董懂动栋侗恫冻洞垌咚岽峒夂氡胨胴硐鸫"</span>,</div><div class="line">            <span class="attr">dou</span>: <span class="string">"兜抖斗陡豆逗痘蔸钭窦窬蚪篼酡"</span>,</div><div class="line">            <span class="attr">du</span>: <span class="string">"都督毒犊独读堵睹赌杜镀肚度渡妒芏嘟渎椟橐牍蠹笃髑黩"</span>,</div><div class="line">            <span class="attr">duan</span>: <span class="string">"端短锻段断缎彖椴煅簖"</span>,</div><div class="line">            <span class="attr">dui</span>: <span class="string">"堆兑队对怼憝碓"</span>,</div><div class="line">            <span class="attr">dun</span>: <span class="string">"墩吨蹲敦顿囤钝盾遁炖砘礅盹镦趸"</span>,</div><div class="line">            <span class="attr">duo</span>: <span class="string">"掇哆多夺垛躲朵跺舵剁惰堕咄哚缍柁铎裰踱"</span>,</div><div class="line">            <span class="attr">e</span>: <span class="string">"蛾峨鹅俄额讹娥恶厄扼遏鄂饿噩谔垩垭苊莪萼呃愕屙婀轭曷腭硪锇锷鹗颚鳄"</span>,</div><div class="line">            <span class="attr">en</span>: <span class="string">"恩蒽摁唔嗯"</span>,</div><div class="line">            <span class="attr">er</span>: <span class="string">"而儿耳尔饵洱二贰迩珥铒鸸鲕"</span>,</div><div class="line">            <span class="attr">fa</span>: <span class="string">"发罚筏伐乏阀法珐垡砝"</span>,</div><div class="line">            <span class="attr">fan</span>: <span class="string">"藩帆番翻樊矾钒繁凡烦反返范贩犯饭泛蘩幡犭梵攵燔畈蹯"</span>,</div><div class="line">            <span class="attr">fang</span>: <span class="string">"坊芳方肪房防妨仿访纺放匚邡彷钫舫鲂"</span>,</div><div class="line">            <span class="attr">fei</span>: <span class="string">"菲非啡飞肥匪诽吠肺废沸费芾狒悱淝妃绋绯榧腓斐扉祓砩镄痱蜚篚翡霏鲱"</span>,</div><div class="line">            <span class="attr">fen</span>: <span class="string">"芬酚吩氛分纷坟焚汾粉奋份忿愤粪偾瀵棼愍鲼鼢"</span>,</div><div class="line">            <span class="attr">feng</span>: <span class="string">"丰封枫蜂峰锋风疯烽逢冯缝讽奉凤俸酆葑沣砜"</span>,</div><div class="line">            <span class="attr">fu</span>: <span class="string">"佛否夫敷肤孵扶拂辐幅氟符伏俘服浮涪福袱弗甫抚辅俯釜斧脯腑府腐赴副覆赋复傅付阜父腹负富讣附妇缚咐匐凫郛芙苻茯莩菔呋幞滏艴孚驸绂桴赙黻黼罘稃馥虍蚨蜉蝠蝮麸趺跗鳆"</span>,</div><div class="line">            <span class="attr">ga</span>: <span class="string">"噶嘎蛤尬呷尕尜旮钆"</span>,</div><div class="line">            <span class="attr">gai</span>: <span class="string">"该改概钙盖溉丐陔垓戤赅胲"</span>,</div><div class="line">            <span class="attr">gan</span>: <span class="string">"干甘杆柑竿肝赶感秆敢赣坩苷尴擀泔淦澉绀橄旰矸疳酐"</span>,</div><div class="line">            <span class="attr">gang</span>: <span class="string">"冈刚钢缸肛纲岗港戆罡颃筻"</span>,</div><div class="line">            <span class="attr">gong</span>: <span class="string">"杠工攻功恭龚供躬公宫弓巩汞拱贡共蕻廾咣珙肱蚣蛩觥"</span>,</div><div class="line">            <span class="attr">gao</span>: <span class="string">"篙皋高膏羔糕搞镐稿告睾诰郜蒿藁缟槔槁杲锆"</span>,</div><div class="line">            <span class="attr">ge</span>: <span class="string">"哥歌搁戈鸽胳疙割革葛格阁隔铬个各鬲仡哿塥嗝纥搿膈硌铪镉袼颌虼舸骼髂"</span>,</div><div class="line">            <span class="attr">gei</span>: <span class="string">"给"</span>,</div><div class="line">            <span class="attr">gen</span>: <span class="string">"根跟亘茛哏艮"</span>,</div><div class="line">            <span class="attr">geng</span>: <span class="string">"耕更庚羹埂耿梗哽赓鲠"</span>,</div><div class="line">            <span class="attr">gou</span>: <span class="string">"钩勾沟苟狗垢构购够佝诟岣遘媾缑觏彀鸲笱篝鞲"</span>,</div><div class="line">            <span class="attr">gu</span>: <span class="string">"辜菇咕箍估沽孤姑鼓古蛊骨谷股故顾固雇嘏诂菰哌崮汩梏轱牯牿胍臌毂瞽罟钴锢瓠鸪鹄痼蛄酤觚鲴骰鹘"</span>,</div><div class="line">            <span class="attr">gua</span>: <span class="string">"刮瓜剐寡挂褂卦诖呱栝鸹"</span>,</div><div class="line">            <span class="attr">guai</span>: <span class="string">"乖拐怪哙"</span>,</div><div class="line">            <span class="attr">guan</span>: <span class="string">"棺关官冠观管馆罐惯灌贯倌莞掼涫盥鹳鳏"</span>,</div><div class="line">            <span class="attr">guang</span>: <span class="string">"光广逛犷桄胱疒"</span>,</div><div class="line">            <span class="attr">gui</span>: <span class="string">"瑰规圭硅归龟闺轨鬼诡癸桂柜跪贵刽匦刿庋宄妫桧炅晷皈簋鲑鳜"</span>,</div><div class="line">            <span class="attr">gun</span>: <span class="string">"辊滚棍丨衮绲磙鲧"</span>,</div><div class="line">            <span class="attr">guo</span>: <span class="string">"锅郭国果裹过馘蠃埚掴呙囗帼崞猓椁虢锞聒蜮蜾蝈"</span>,</div><div class="line">            <span class="attr">ha</span>: <span class="string">"哈"</span>,</div><div class="line">            <span class="attr">hai</span>: <span class="string">"骸孩海氦亥害骇咴嗨颏醢"</span>,</div><div class="line">            <span class="attr">han</span>: <span class="string">"酣憨邯韩含涵寒函喊罕翰撼捍旱憾悍焊汗汉邗菡撖阚瀚晗焓颔蚶鼾"</span>,</div><div class="line">            <span class="attr">hen</span>: <span class="string">"夯痕很狠恨"</span>,</div><div class="line">            <span class="attr">hang</span>: <span class="string">"杭航沆绗珩桁"</span>,</div><div class="line">            <span class="attr">hao</span>: <span class="string">"壕嚎豪毫郝好耗号浩薅嗥嚆濠灏昊皓颢蚝"</span>,</div><div class="line">            <span class="attr">he</span>: <span class="string">"呵喝荷菏核禾和何合盒貉阂河涸赫褐鹤贺诃劾壑藿嗑嗬阖盍蚵翮"</span>,</div><div class="line">            <span class="attr">hei</span>: <span class="string">"嘿黑"</span>,</div><div class="line">            <span class="attr">heng</span>: <span class="string">"哼亨横衡恒訇蘅"</span>,</div><div class="line">            <span class="attr">hong</span>: <span class="string">"轰哄烘虹鸿洪宏弘红黉讧荭薨闳泓"</span>,</div><div class="line">            <span class="attr">hou</span>: <span class="string">"喉侯猴吼厚候后堠後逅瘊篌糇鲎骺"</span>,</div><div class="line">            <span class="attr">hu</span>: <span class="string">"呼乎忽瑚壶葫胡蝴狐糊湖弧虎唬护互沪户冱唿囫岵猢怙惚浒滹琥槲轷觳烀煳戽扈祜鹕鹱笏醐斛"</span>,</div><div class="line">            <span class="attr">hua</span>: <span class="string">"花哗华猾滑画划化话劐浍骅桦铧稞"</span>,</div><div class="line">            <span class="attr">huai</span>: <span class="string">"槐徊怀淮坏还踝"</span>,</div><div class="line">            <span class="attr">huan</span>: <span class="string">"欢环桓缓换患唤痪豢焕涣宦幻郇奂垸擐圜洹浣漶寰逭缳锾鲩鬟"</span>,</div><div class="line">            <span class="attr">huang</span>: <span class="string">"荒慌黄磺蝗簧皇凰惶煌晃幌恍谎隍徨湟潢遑璜肓癀蟥篁鳇"</span>,</div><div class="line">            <span class="attr">hui</span>: <span class="string">"灰挥辉徽恢蛔回毁悔慧卉惠晦贿秽会烩汇讳诲绘诙茴荟蕙哕喙隳洄彗缋珲晖恚虺蟪麾"</span>,</div><div class="line">            <span class="attr">hun</span>: <span class="string">"荤昏婚魂浑混诨馄阍溷缗"</span>,</div><div class="line">            <span class="attr">huo</span>: <span class="string">"豁活伙火获或惑霍货祸攉嚯夥钬锪镬耠蠖"</span>,</div><div class="line">            <span class="attr">ji</span>: <span class="string">"击圾基机畸稽积箕肌饥迹激讥鸡姬绩缉吉极棘辑籍集及急疾汲即嫉级挤几脊己蓟技冀季伎祭剂悸济寄寂计记既忌际妓继纪居丌乩剞佶佴脔墼芨芰萁蒺蕺掎叽咭哜唧岌嵴洎彐屐骥畿玑楫殛戟戢赍觊犄齑矶羁嵇稷瘠瘵虮笈笄暨跻跽霁鲚鲫髻麂"</span>,</div><div class="line">            <span class="attr">jia</span>: <span class="string">"嘉枷夹佳家加荚颊贾甲钾假稼价架驾嫁伽郏拮岬浃迦珈戛胛恝铗镓痂蛱笳袈跏"</span>,</div><div class="line">            <span class="attr">jian</span>: <span class="string">"歼监坚尖笺间煎兼肩艰奸缄茧检柬碱硷拣捡简俭剪减荐槛鉴践贱见键箭件健舰剑饯渐溅涧建僭谏谫菅蒹搛囝湔蹇謇缣枧柙楗戋戬牮犍毽腱睑锏鹣裥笕箴翦趼踺鲣鞯"</span>,</div><div class="line">            <span class="attr">jiang</span>: <span class="string">"僵姜将浆江疆蒋桨奖讲匠酱降茳洚绛缰犟礓耩糨豇"</span>,</div><div class="line">            <span class="attr">jiao</span>: <span class="string">"蕉椒礁焦胶交郊浇骄娇嚼搅铰矫侥脚狡角饺缴绞剿教酵轿较叫佼僬茭挢噍峤徼姣纟敫皎鹪蛟醮跤鲛"</span>,</div><div class="line">            <span class="attr">jie</span>: <span class="string">"窖揭接皆秸街阶截劫节桔杰捷睫竭洁结解姐戒藉芥界借介疥诫届偈讦诘喈嗟獬婕孑桀獒碣锴疖袷颉蚧羯鲒骱髫"</span>,</div><div class="line">            <span class="attr">jin</span>: <span class="string">"巾筋斤金今津襟紧锦仅谨进靳晋禁近烬浸尽卺荩堇噤馑廑妗缙瑾槿赆觐钅锓衿矜"</span>,</div><div class="line">            <span class="attr">jing</span>: <span class="string">"劲荆兢茎睛晶鲸京惊精粳经井警景颈静境敬镜径痉靖竟竞净刭儆阱菁獍憬泾迳弪婧肼胫腈旌"</span>,</div><div class="line">            <span class="attr">jiong</span>: <span class="string">"炯窘冂迥扃"</span>,</div><div class="line">            <span class="attr">jiu</span>: <span class="string">"揪究纠玖韭久灸九酒厩救旧臼舅咎就疚僦啾阄柩桕鹫赳鬏"</span>,</div><div class="line">            <span class="attr">ju</span>: <span class="string">"鞠拘狙疽驹菊局咀矩举沮聚拒据巨具距踞锯俱句惧炬剧倨讵苣苴莒掬遽屦琚枸椐榘榉橘犋飓钜锔窭裾趄醵踽龃雎鞫"</span>,</div><div class="line">            <span class="attr">juan</span>: <span class="string">"捐鹃娟倦眷卷绢鄄狷涓桊蠲锩镌隽"</span>,</div><div class="line">            <span class="attr">jue</span>: <span class="string">"撅攫抉掘倔爵觉决诀绝厥劂谲矍蕨噘崛獗孓珏桷橛爝镢蹶觖"</span>,</div><div class="line">            <span class="attr">jun</span>: <span class="string">"均菌钧军君峻俊竣浚郡骏捃狻皲筠麇"</span>,</div><div class="line">            <span class="attr">ka</span>: <span class="string">"喀咖卡佧咔胩"</span>,</div><div class="line">            <span class="attr">ke</span>: <span class="string">"咯坷苛柯棵磕颗科壳咳可渴克刻客课岢恪溘骒缂珂轲氪瞌钶疴窠蝌髁"</span>,</div><div class="line">            <span class="attr">kai</span>: <span class="string">"开揩楷凯慨剀垲蒈忾恺铠锎"</span>,</div><div class="line">            <span class="attr">kan</span>: <span class="string">"刊堪勘坎砍看侃凵莰莶戡龛瞰"</span>,</div><div class="line">            <span class="attr">kang</span>: <span class="string">"康慷糠扛抗亢炕坑伉闶钪"</span>,</div><div class="line">            <span class="attr">kao</span>: <span class="string">"考拷烤靠尻栲犒铐"</span>,</div><div class="line">            <span class="attr">ken</span>: <span class="string">"肯啃垦恳垠裉颀"</span>,</div><div class="line">            <span class="attr">keng</span>: <span class="string">"吭忐铿"</span>,</div><div class="line">            <span class="attr">kong</span>: <span class="string">"空恐孔控倥崆箜"</span>,</div><div class="line">            <span class="attr">kou</span>: <span class="string">"抠口扣寇芤蔻叩眍筘"</span>,</div><div class="line">            <span class="attr">ku</span>: <span class="string">"枯哭窟苦酷库裤刳堀喾绔骷"</span>,</div><div class="line">            <span class="attr">kua</span>: <span class="string">"夸垮挎跨胯侉"</span>,</div><div class="line">            <span class="attr">kuai</span>: <span class="string">"块筷侩快蒯郐蒉狯脍"</span>,</div><div class="line">            <span class="attr">kuan</span>: <span class="string">"宽款髋"</span>,</div><div class="line">            <span class="attr">kuang</span>: <span class="string">"匡筐狂框矿眶旷况诓诳邝圹夼哐纩贶"</span>,</div><div class="line">            <span class="attr">kui</span>: <span class="string">"亏盔岿窥葵奎魁傀馈愧溃馗匮夔隗揆喹喟悝愦阕逵暌睽聩蝰篑臾跬"</span>,</div><div class="line">            <span class="attr">kun</span>: <span class="string">"坤昆捆困悃阃琨锟醌鲲髡"</span>,</div><div class="line">            <span class="attr">kuo</span>: <span class="string">"括扩廓阔蛞"</span>,</div><div class="line">            <span class="attr">la</span>: <span class="string">"垃拉喇蜡腊辣啦剌摺邋旯砬瘌"</span>,</div><div class="line">            <span class="attr">lai</span>: <span class="string">"莱来赖崃徕涞濑赉睐铼癞籁"</span>,</div><div class="line">            <span class="attr">lan</span>: <span class="string">"蓝婪栏拦篮阑兰澜谰揽览懒缆烂滥啉岚懔漤榄斓罱镧褴"</span>,</div><div class="line">            <span class="attr">lang</span>: <span class="string">"琅榔狼廊郎朗浪莨蒗啷阆锒稂螂"</span>,</div><div class="line">            <span class="attr">lao</span>: <span class="string">"捞劳牢老佬姥酪烙涝唠崂栳铑铹痨醪"</span>,</div><div class="line">            <span class="attr">le</span>: <span class="string">"勒乐肋仂叻嘞泐鳓"</span>,</div><div class="line">            <span class="attr">lei</span>: <span class="string">"雷镭蕾磊累儡垒擂类泪羸诔荽咧漯嫘缧檑耒酹"</span>,</div><div class="line">            <span class="attr">ling</span>: <span class="string">"棱冷拎玲菱零龄铃伶羚凌灵陵岭领另令酃塄苓呤囹泠绫柃棂瓴聆蛉翎鲮"</span>,</div><div class="line">            <span class="attr">leng</span>: <span class="string">"楞愣"</span>,</div><div class="line">            <span class="attr">li</span>: <span class="string">"厘梨犁黎篱狸离漓理李里鲤礼莉荔吏栗丽厉励砾历利傈例俐痢立粒沥隶力璃哩俪俚郦坜苈莅蓠藜捩呖唳喱猁溧澧逦娌嫠骊缡珞枥栎轹戾砺詈罹锂鹂疠疬蛎蜊蠡笠篥粝醴跞雳鲡鳢黧"</span>,</div><div class="line">            <span class="attr">lian</span>: <span class="string">"俩联莲连镰廉怜涟帘敛脸链恋炼练挛蔹奁潋濂娈琏楝殓臁膦裢蠊鲢"</span>,</div><div class="line">            <span class="attr">liang</span>: <span class="string">"粮凉梁粱良两辆量晾亮谅墚椋踉靓魉"</span>,</div><div class="line">            <span class="attr">liao</span>: <span class="string">"撩聊僚疗燎寥辽潦了撂镣廖料蓼尥嘹獠寮缭钌鹩耢"</span>,</div><div class="line">            <span class="attr">lie</span>: <span class="string">"列裂烈劣猎冽埒洌趔躐鬣"</span>,</div><div class="line">            <span class="attr">lin</span>: <span class="string">"琳林磷霖临邻鳞淋凛赁吝蔺嶙廪遴檩辚瞵粼躏麟"</span>,</div><div class="line">            <span class="attr">liu</span>: <span class="string">"溜琉榴硫馏留刘瘤流柳六抡偻蒌泖浏遛骝绺旒熘锍镏鹨鎏"</span>,</div><div class="line">            <span class="string">"long"</span>: <span class="string">"龙聋咙笼窿隆垄拢陇弄垅茏泷珑栊胧砻癃"</span>,</div><div class="line">            <span class="attr">lou</span>: <span class="string">"楼娄搂篓漏陋喽嵝镂瘘耧蝼髅"</span>,</div><div class="line">            <span class="attr">lu</span>: <span class="string">"芦卢颅庐炉掳卤虏鲁麓碌露路赂鹿潞禄录陆戮垆摅撸噜泸渌漉璐栌橹轳辂辘氇胪镥鸬鹭簏舻鲈"</span>,</div><div class="line">            <span class="attr">lv</span>: <span class="string">"驴吕铝侣旅履屡缕虑氯律率滤绿捋闾榈膂稆褛"</span>,</div><div class="line">            <span class="attr">luan</span>: <span class="string">"峦孪滦卵乱栾鸾銮"</span>,</div><div class="line">            <span class="attr">lue</span>: <span class="string">"掠略锊"</span>,</div><div class="line">            <span class="attr">lun</span>: <span class="string">"轮伦仑沦纶论囵"</span>,</div><div class="line">            <span class="attr">luo</span>: <span class="string">"萝螺罗逻锣箩骡裸落洛骆络倮荦摞猡泺椤脶镙瘰雒"</span>,</div><div class="line">            <span class="attr">ma</span>: <span class="string">"妈麻玛码蚂马骂嘛吗唛犸嬷杩麽"</span>,</div><div class="line">            <span class="attr">mai</span>: <span class="string">"埋买麦卖迈脉劢荬咪霾"</span>,</div><div class="line">            <span class="attr">man</span>: <span class="string">"瞒馒蛮满蔓曼慢漫谩墁幔缦熳镘颟螨鳗鞔"</span>,</div><div class="line">            <span class="attr">mang</span>: <span class="string">"芒茫盲忙莽邙漭朦硭蟒"</span>,</div><div class="line">            <span class="attr">meng</span>: <span class="string">"氓萌蒙檬盟锰猛梦孟勐甍瞢懵礞虻蜢蠓艋艨黾"</span>,</div><div class="line">            <span class="attr">miao</span>: <span class="string">"猫苗描瞄藐秒渺庙妙喵邈缈缪杪淼眇鹋蜱"</span>,</div><div class="line">            <span class="attr">mao</span>: <span class="string">"茅锚毛矛铆卯茂冒帽貌贸侔袤勖茆峁瑁昴牦耄旄懋瞀蛑蝥蟊髦"</span>,</div><div class="line">            <span class="attr">me</span>: <span class="string">"么"</span>,</div><div class="line">            <span class="attr">mei</span>: <span class="string">"玫枚梅酶霉煤没眉媒镁每美昧寐妹媚坶莓嵋猸浼湄楣镅鹛袂魅"</span>,</div><div class="line">            <span class="attr">men</span>: <span class="string">"门闷们扪玟焖懑钔"</span>,</div><div class="line">            <span class="attr">mi</span>: <span class="string">"眯醚靡糜迷谜弥米秘觅泌蜜密幂芈冖谧蘼嘧猕獯汨宓弭脒敉糸縻麋"</span>,</div><div class="line">            <span class="attr">mian</span>: <span class="string">"棉眠绵冕免勉娩缅面沔湎腼眄"</span>,</div><div class="line">            <span class="attr">mie</span>: <span class="string">"蔑灭咩蠛篾"</span>,</div><div class="line">            <span class="attr">min</span>: <span class="string">"民抿皿敏悯闽苠岷闵泯珉"</span>,</div><div class="line">            <span class="attr">ming</span>: <span class="string">"明螟鸣铭名命冥茗溟暝瞑酩"</span>,</div><div class="line">            <span class="attr">miu</span>: <span class="string">"谬"</span>,</div><div class="line">            <span class="attr">mo</span>: <span class="string">"摸摹蘑模膜磨摩魔抹末莫墨默沫漠寞陌谟茉蓦馍嫫镆秣瘼耱蟆貊貘"</span>,</div><div class="line">            <span class="attr">mou</span>: <span class="string">"谋牟某厶哞婺眸鍪"</span>,</div><div class="line">            <span class="attr">mu</span>: <span class="string">"拇牡亩姆母墓暮幕募慕木目睦牧穆仫苜呒沐毪钼"</span>,</div><div class="line">            <span class="attr">na</span>: <span class="string">"拿哪呐钠那娜纳内捺肭镎衲箬"</span>,</div><div class="line">            <span class="attr">nai</span>: <span class="string">"氖乃奶耐奈鼐艿萘柰"</span>,</div><div class="line">            <span class="attr">nan</span>: <span class="string">"南男难囊喃囡楠腩蝻赧"</span>,</div><div class="line">            <span class="attr">nao</span>: <span class="string">"挠脑恼闹孬垴猱瑙硇铙蛲"</span>,</div><div class="line">            <span class="attr">ne</span>: <span class="string">"淖呢讷"</span>,</div><div class="line">            <span class="attr">nei</span>: <span class="string">"馁"</span>,</div><div class="line">            <span class="attr">nen</span>: <span class="string">"嫩能枘恁"</span>,</div><div class="line">            <span class="attr">ni</span>: <span class="string">"妮霓倪泥尼拟你匿腻逆溺伲坭猊怩滠昵旎祢慝睨铌鲵"</span>,</div><div class="line">            <span class="attr">nian</span>: <span class="string">"蔫拈年碾撵捻念廿辇黏鲇鲶"</span>,</div><div class="line">            <span class="attr">niang</span>: <span class="string">"娘酿"</span>,</div><div class="line">            <span class="attr">niao</span>: <span class="string">"鸟尿茑嬲脲袅"</span>,</div><div class="line">            <span class="attr">nie</span>: <span class="string">"捏聂孽啮镊镍涅乜陧蘖嗫肀颞臬蹑"</span>,</div><div class="line">            <span class="attr">nin</span>: <span class="string">"您柠"</span>,</div><div class="line">            <span class="attr">ning</span>: <span class="string">"狞凝宁拧泞佞蓥咛甯聍"</span>,</div><div class="line">            <span class="attr">niu</span>: <span class="string">"牛扭钮纽狃忸妞蚴"</span>,</div><div class="line">            <span class="attr">nong</span>: <span class="string">"脓浓农侬"</span>,</div><div class="line">            <span class="attr">nu</span>: <span class="string">"奴努怒呶帑弩胬孥驽"</span>,</div><div class="line">            <span class="attr">nv</span>: <span class="string">"女恧钕衄"</span>,</div><div class="line">            <span class="attr">nuan</span>: <span class="string">"暖"</span>,</div><div class="line">            <span class="attr">nuenue</span>: <span class="string">"虐"</span>,</div><div class="line">            <span class="attr">nue</span>: <span class="string">"疟谑"</span>,</div><div class="line">            <span class="attr">nuo</span>: <span class="string">"挪懦糯诺傩搦喏锘"</span>,</div><div class="line">            <span class="attr">ou</span>: <span class="string">"哦欧鸥殴藕呕偶沤怄瓯耦"</span>,</div><div class="line">            <span class="attr">pa</span>: <span class="string">"啪趴爬帕怕琶葩筢"</span>,</div><div class="line">            <span class="attr">pai</span>: <span class="string">"拍排牌徘湃派俳蒎"</span>,</div><div class="line">            <span class="attr">pan</span>: <span class="string">"攀潘盘磐盼畔判叛爿泮袢襻蟠蹒"</span>,</div><div class="line">            <span class="attr">pang</span>: <span class="string">"乓庞旁耪胖滂逄"</span>,</div><div class="line">            <span class="attr">pao</span>: <span class="string">"抛咆刨炮袍跑泡匏狍庖脬疱"</span>,</div><div class="line">            <span class="attr">pei</span>: <span class="string">"呸胚培裴赔陪配佩沛掊辔帔淠旆锫醅霈"</span>,</div><div class="line">            <span class="attr">pen</span>: <span class="string">"喷盆湓"</span>,</div><div class="line">            <span class="attr">peng</span>: <span class="string">"砰抨烹澎彭蓬棚硼篷膨朋鹏捧碰坯堋嘭怦蟛"</span>,</div><div class="line">            <span class="attr">pi</span>: <span class="string">"砒霹批披劈琵毗啤脾疲皮匹痞僻屁譬丕陴邳郫圮鼙擗噼庀媲纰枇甓睥罴铍痦癖疋蚍貔"</span>,</div><div class="line">            <span class="attr">pian</span>: <span class="string">"篇偏片骗谝骈犏胼褊翩蹁"</span>,</div><div class="line">            <span class="attr">piao</span>: <span class="string">"飘漂瓢票剽嘌嫖缥殍瞟螵"</span>,</div><div class="line">            <span class="attr">pie</span>: <span class="string">"撇瞥丿苤氕"</span>,</div><div class="line">            <span class="attr">pin</span>: <span class="string">"拼频贫品聘拚姘嫔榀牝颦"</span>,</div><div class="line">            <span class="attr">ping</span>: <span class="string">"乒坪苹萍平凭瓶评屏俜娉枰鲆"</span>,</div><div class="line">            <span class="attr">po</span>: <span class="string">"坡泼颇婆破魄迫粕叵鄱溥珀钋钷皤笸"</span>,</div><div class="line">            <span class="attr">pou</span>: <span class="string">"剖裒踣"</span>,</div><div class="line">            <span class="attr">pu</span>: <span class="string">"扑铺仆莆葡菩蒲埔朴圃普浦谱曝瀑匍噗濮璞氆镤镨蹼"</span>,</div><div class="line">            <span class="attr">qi</span>: <span class="string">"期欺栖戚妻七凄漆柒沏其棋奇歧畦崎脐齐旗祈祁骑起岂乞企启契砌器气迄弃汽泣讫亟亓圻芑萋葺嘁屺岐汔淇骐绮琪琦杞桤槭欹祺憩碛蛴蜞綦綮趿蹊鳍麒"</span>,</div><div class="line">            <span class="attr">qia</span>: <span class="string">"掐恰洽葜"</span>,</div><div class="line">            <span class="attr">qian</span>: <span class="string">"牵扦钎铅千迁签仟谦乾黔钱钳前潜遣浅谴堑嵌欠歉佥阡芊芡荨掮岍悭慊骞搴褰缱椠肷愆钤虔箝"</span>,</div><div class="line">            <span class="attr">qiang</span>: <span class="string">"枪呛腔羌墙蔷强抢嫱樯戗炝锖锵镪襁蜣羟跫跄"</span>,</div><div class="line">            <span class="attr">qiao</span>: <span class="string">"橇锹敲悄桥瞧乔侨巧鞘撬翘峭俏窍劁诮谯荞愀憔缲樵毳硗跷鞒"</span>,</div><div class="line">            <span class="attr">qie</span>: <span class="string">"切茄且怯窃郄唼惬妾挈锲箧"</span>,</div><div class="line">            <span class="attr">qin</span>: <span class="string">"钦侵亲秦琴勤芹擒禽寝沁芩蓁蕲揿吣嗪噙溱檎螓衾"</span>,</div><div class="line">            <span class="attr">qing</span>: <span class="string">"青轻氢倾卿清擎晴氰情顷请庆倩苘圊檠磬蜻罄箐謦鲭黥"</span>,</div><div class="line">            <span class="attr">qiong</span>: <span class="string">"琼穷邛茕穹筇銎"</span>,</div><div class="line">            <span class="attr">qiu</span>: <span class="string">"秋丘邱球求囚酋泅俅氽巯艽犰湫逑遒楸赇鸠虬蚯蝤裘糗鳅鼽"</span>,</div><div class="line">            <span class="attr">qu</span>: <span class="string">"趋区蛆曲躯屈驱渠取娶龋趣去诎劬蕖蘧岖衢阒璩觑氍祛磲癯蛐蠼麴瞿黢"</span>,</div><div class="line">            <span class="attr">quan</span>: <span class="string">"圈颧权醛泉全痊拳犬券劝诠荃獾悛绻辁畎铨蜷筌鬈"</span>,</div><div class="line">            <span class="attr">que</span>: <span class="string">"缺炔瘸却鹊榷确雀阙悫"</span>,</div><div class="line">            <span class="attr">qun</span>: <span class="string">"裙群逡"</span>,</div><div class="line">            <span class="attr">ran</span>: <span class="string">"然燃冉染苒髯"</span>,</div><div class="line">            <span class="attr">rang</span>: <span class="string">"瓤壤攘嚷让禳穰"</span>,</div><div class="line">            <span class="attr">rao</span>: <span class="string">"饶扰绕荛娆桡"</span>,</div><div class="line">            <span class="attr">ruo</span>: <span class="string">"惹若弱"</span>,</div><div class="line">            <span class="attr">re</span>: <span class="string">"热偌"</span>,</div><div class="line">            <span class="attr">ren</span>: <span class="string">"壬仁人忍韧任认刃妊纫仞荏葚饪轫稔衽"</span>,</div><div class="line">            <span class="attr">reng</span>: <span class="string">"扔仍"</span>,</div><div class="line">            <span class="attr">ri</span>: <span class="string">"日"</span>,</div><div class="line">            <span class="attr">rong</span>: <span class="string">"戎茸蓉荣融熔溶容绒冗嵘狨缛榕蝾"</span>,</div><div class="line">            <span class="attr">rou</span>: <span class="string">"揉柔肉糅蹂鞣"</span>,</div><div class="line">            <span class="attr">ru</span>: <span class="string">"茹蠕儒孺如辱乳汝入褥蓐薷嚅洳溽濡铷襦颥"</span>,</div><div class="line">            <span class="attr">ruan</span>: <span class="string">"软阮朊"</span>,</div><div class="line">            <span class="attr">rui</span>: <span class="string">"蕊瑞锐芮蕤睿蚋"</span>,</div><div class="line">            <span class="attr">run</span>: <span class="string">"闰润"</span>,</div><div class="line">            <span class="attr">sa</span>: <span class="string">"撒洒萨卅仨挲飒"</span>,</div><div class="line">            <span class="attr">sai</span>: <span class="string">"腮鳃塞赛噻"</span>,</div><div class="line">            <span class="attr">san</span>: <span class="string">"三叁伞散彡馓氵毵糁霰"</span>,</div><div class="line">            <span class="attr">sang</span>: <span class="string">"桑嗓丧搡磉颡"</span>,</div><div class="line">            <span class="attr">sao</span>: <span class="string">"搔骚扫嫂埽臊瘙鳋"</span>,</div><div class="line">            <span class="attr">se</span>: <span class="string">"瑟色涩啬铩铯穑"</span>,</div><div class="line">            <span class="attr">sen</span>: <span class="string">"森"</span>,</div><div class="line">            <span class="attr">seng</span>: <span class="string">"僧"</span>,</div><div class="line">            <span class="attr">sha</span>: <span class="string">"莎砂杀刹沙纱傻啥煞脎歃痧裟霎鲨"</span>,</div><div class="line">            <span class="attr">shai</span>: <span class="string">"筛晒酾"</span>,</div><div class="line">            <span class="attr">shan</span>: <span class="string">"珊苫杉山删煽衫闪陕擅赡膳善汕扇缮剡讪鄯埏芟潸姗骟膻钐疝蟮舢跚鳝"</span>,</div><div class="line">            <span class="attr">shang</span>: <span class="string">"墒伤商赏晌上尚裳垧绱殇熵觞"</span>,</div><div class="line">            <span class="attr">shao</span>: <span class="string">"梢捎稍烧芍勺韶少哨邵绍劭苕潲蛸笤筲艄"</span>,</div><div class="line">            <span class="attr">she</span>: <span class="string">"奢赊蛇舌舍赦摄射慑涉社设厍佘猞畲麝"</span>,</div><div class="line">            <span class="attr">shen</span>: <span class="string">"砷申呻伸身深娠绅神沈审婶甚肾慎渗诜谂吲哂渖椹矧蜃"</span>,</div><div class="line">            <span class="attr">sheng</span>: <span class="string">"声生甥牲升绳省盛剩胜圣丞渑媵眚笙"</span>,</div><div class="line">            <span class="attr">shi</span>: <span class="string">"师失狮施湿诗尸虱十石拾时什食蚀实识史矢使屎驶始式示士世柿事拭誓逝势是嗜噬适仕侍释饰氏市恃室视试谥埘莳蓍弑唑饣轼耆贳炻礻铈铊螫舐筮豕鲥鲺"</span>,</div><div class="line">            <span class="attr">shou</span>: <span class="string">"收手首守寿授售受瘦兽扌狩绶艏"</span>,</div><div class="line">            <span class="attr">shu</span>: <span class="string">"蔬枢梳殊抒输叔舒淑疏书赎孰熟薯暑曙署蜀黍鼠属术述树束戍竖墅庶数漱恕倏塾菽忄沭涑澍姝纾毹腧殳镯秫鹬"</span>,</div><div class="line">            <span class="attr">shua</span>: <span class="string">"刷耍唰涮"</span>,</div><div class="line">            <span class="attr">shuai</span>: <span class="string">"摔衰甩帅蟀"</span>,</div><div class="line">            <span class="attr">shuan</span>: <span class="string">"栓拴闩"</span>,</div><div class="line">            <span class="attr">shuang</span>: <span class="string">"霜双爽孀"</span>,</div><div class="line">            <span class="attr">shui</span>: <span class="string">"谁水睡税"</span>,</div><div class="line">            <span class="attr">shun</span>: <span class="string">"吮瞬顺舜恂"</span>,</div><div class="line">            <span class="attr">shuo</span>: <span class="string">"说硕朔烁蒴搠嗍濯妁槊铄"</span>,</div><div class="line">            <span class="attr">si</span>: <span class="string">"斯撕嘶思私司丝死肆寺嗣四伺似饲巳厮俟兕菥咝汜泗澌姒驷缌祀祠锶鸶耜蛳笥"</span>,</div><div class="line">            <span class="attr">song</span>: <span class="string">"松耸怂颂送宋讼诵凇菘崧嵩忪悚淞竦"</span>,</div><div class="line">            <span class="attr">sou</span>: <span class="string">"搜艘擞嗽叟嗖嗾馊溲飕瞍锼螋"</span>,</div><div class="line">            <span class="attr">su</span>: <span class="string">"苏酥俗素速粟僳塑溯宿诉肃夙谡蔌嗉愫簌觫稣"</span>,</div><div class="line">            <span class="attr">suan</span>: <span class="string">"酸蒜算"</span>,</div><div class="line">            <span class="attr">sui</span>: <span class="string">"虽隋随绥髓碎岁穗遂隧祟蓑冫谇濉邃燧眭睢"</span>,</div><div class="line">            <span class="attr">sun</span>: <span class="string">"孙损笋荪狲飧榫跣隼"</span>,</div><div class="line">            <span class="attr">suo</span>: <span class="string">"梭唆缩琐索锁所唢嗦娑桫睃羧"</span>,</div><div class="line">            <span class="attr">ta</span>: <span class="string">"塌他它她塔獭挞蹋踏闼溻遢榻沓"</span>,</div><div class="line">            <span class="attr">tai</span>: <span class="string">"胎苔抬台泰酞太态汰邰薹肽炱钛跆鲐"</span>,</div><div class="line">            <span class="attr">tan</span>: <span class="string">"坍摊贪瘫滩坛檀痰潭谭谈坦毯袒碳探叹炭郯蕈昙钽锬覃"</span>,</div><div class="line">            <span class="attr">tang</span>: <span class="string">"汤塘搪堂棠膛唐糖傥饧溏瑭铴镗耥螗螳羰醣"</span>,</div><div class="line">            <span class="attr">thang</span>: <span class="string">"倘躺淌"</span>,</div><div class="line">            <span class="attr">theng</span>: <span class="string">"趟烫"</span>,</div><div class="line">            <span class="attr">tao</span>: <span class="string">"掏涛滔绦萄桃逃淘陶讨套挑鼗啕韬饕"</span>,</div><div class="line">            <span class="attr">te</span>: <span class="string">"特"</span>,</div><div class="line">            <span class="attr">teng</span>: <span class="string">"藤腾疼誊滕"</span>,</div><div class="line">            <span class="attr">ti</span>: <span class="string">"梯剔踢锑提题蹄啼体替嚏惕涕剃屉荑悌逖绨缇鹈裼醍"</span>,</div><div class="line">            <span class="attr">tian</span>: <span class="string">"天添填田甜恬舔腆掭忝阗殄畋钿蚺"</span>,</div><div class="line">            <span class="attr">tiao</span>: <span class="string">"条迢眺跳佻祧铫窕龆鲦"</span>,</div><div class="line">            <span class="attr">tie</span>: <span class="string">"贴铁帖萜餮"</span>,</div><div class="line">            <span class="attr">ting</span>: <span class="string">"厅听烃汀廷停亭庭挺艇莛葶婷梃蜓霆"</span>,</div><div class="line">            <span class="attr">tong</span>: <span class="string">"通桐酮瞳同铜彤童桶捅筒统痛佟僮仝茼嗵恸潼砼"</span>,</div><div class="line">            <span class="attr">tou</span>: <span class="string">"偷投头透亠"</span>,</div><div class="line">            <span class="attr">tu</span>: <span class="string">"凸秃突图徒途涂屠土吐兔堍荼菟钍酴"</span>,</div><div class="line">            <span class="attr">tuan</span>: <span class="string">"湍团疃"</span>,</div><div class="line">            <span class="attr">tui</span>: <span class="string">"推颓腿蜕褪退忒煺"</span>,</div><div class="line">            <span class="attr">tun</span>: <span class="string">"吞屯臀饨暾豚窀"</span>,</div><div class="line">            <span class="attr">tuo</span>: <span class="string">"拖托脱鸵陀驮驼椭妥拓唾乇佗坨庹沱柝砣箨舄跎鼍"</span>,</div><div class="line">            <span class="attr">wa</span>: <span class="string">"挖哇蛙洼娃瓦袜佤娲腽"</span>,</div><div class="line">            <span class="attr">wai</span>: <span class="string">"歪外"</span>,</div><div class="line">            <span class="attr">wan</span>: <span class="string">"豌弯湾玩顽丸烷完碗挽晚皖惋宛婉万腕剜芄苋菀纨绾琬脘畹蜿箢"</span>,</div><div class="line">            <span class="attr">wang</span>: <span class="string">"汪王亡枉网往旺望忘妄罔尢惘辋魍"</span>,</div><div class="line">            <span class="attr">wei</span>: <span class="string">"威巍微危韦违桅围唯惟为潍维苇萎委伟伪尾纬未蔚味畏胃喂魏位渭谓尉慰卫倭偎诿隈葳薇帏帷崴嵬猥猬闱沩洧涠逶娓玮韪軎炜煨熨痿艉鲔"</span>,</div><div class="line">            <span class="attr">wen</span>: <span class="string">"瘟温蚊文闻纹吻稳紊问刎愠阌汶璺韫殁雯"</span>,</div><div class="line">            <span class="attr">weng</span>: <span class="string">"嗡翁瓮蓊蕹"</span>,</div><div class="line">            <span class="attr">wo</span>: <span class="string">"挝蜗涡窝我斡卧握沃莴幄渥杌肟龌"</span>,</div><div class="line">            <span class="attr">wu</span>: <span class="string">"巫呜钨乌污诬屋无芜梧吾吴毋武五捂午舞伍侮坞戊雾晤物勿务悟误兀仵阢邬圬芴庑怃忤浯寤迕妩骛牾焐鹉鹜蜈鋈鼯"</span>,</div><div class="line">            <span class="attr">xi</span>: <span class="string">"昔熙析西硒矽晰嘻吸锡牺稀息希悉膝夕惜熄烯溪汐犀檄袭席习媳喜铣洗系隙戏细僖兮隰郗茜葸蓰奚唏徙饩阋浠淅屣嬉玺樨曦觋欷熹禊禧钸皙穸蜥蟋舾羲粞翕醯鼷"</span>,</div><div class="line">            <span class="attr">xia</span>: <span class="string">"瞎虾匣霞辖暇峡侠狭下厦夏吓掀葭嗄狎遐瑕硖瘕罅黠"</span>,</div><div class="line">            <span class="attr">xian</span>: <span class="string">"锨先仙鲜纤咸贤衔舷闲涎弦嫌显险现献县腺馅羡宪陷限线冼藓岘猃暹娴氙祆鹇痫蚬筅籼酰跹"</span>,</div><div class="line">            <span class="attr">xiang</span>: <span class="string">"相厢镶香箱襄湘乡翔祥详想响享项巷橡像向象芗葙饷庠骧缃蟓鲞飨"</span>,</div><div class="line">            <span class="attr">xiao</span>: <span class="string">"萧硝霄削哮嚣销消宵淆晓小孝校肖啸笑效哓咻崤潇逍骁绡枭枵筱箫魈"</span>,</div><div class="line">            <span class="attr">xie</span>: <span class="string">"楔些歇蝎鞋协挟携邪斜胁谐写械卸蟹懈泄泻谢屑偕亵勰燮薤撷廨瀣邂绁缬榭榍歙躞"</span>,</div><div class="line">            <span class="attr">xin</span>: <span class="string">"薪芯锌欣辛新忻心信衅囟馨莘歆铽鑫"</span>,</div><div class="line">            <span class="attr">xing</span>: <span class="string">"星腥猩惺兴刑型形邢行醒幸杏性姓陉荇荥擤悻硎"</span>,</div><div class="line">            <span class="attr">xiong</span>: <span class="string">"兄凶胸匈汹雄熊芎"</span>,</div><div class="line">            <span class="attr">xiu</span>: <span class="string">"休修羞朽嗅锈秀袖绣莠岫馐庥鸺貅髹"</span>,</div><div class="line">            <span class="attr">xu</span>: <span class="string">"墟戌需虚嘘须徐许蓄酗叙旭序畜恤絮婿绪续讴诩圩蓿怵洫溆顼栩煦砉盱胥糈醑"</span>,</div><div class="line">            <span class="attr">xuan</span>: <span class="string">"轩喧宣悬旋玄选癣眩绚儇谖萱揎馔泫洵渲漩璇楦暄炫煊碹铉镟痃"</span>,</div><div class="line">            <span class="attr">xue</span>: <span class="string">"靴薛学穴雪血噱泶鳕"</span>,</div><div class="line">            <span class="attr">xun</span>: <span class="string">"勋熏循旬询寻驯巡殉汛训讯逊迅巽埙荀薰峋徇浔曛窨醺鲟"</span>,</div><div class="line">            <span class="attr">ya</span>: <span class="string">"压押鸦鸭呀丫芽牙蚜崖衙涯雅哑亚讶伢揠吖岈迓娅琊桠氩砑睚痖"</span>,</div><div class="line">            <span class="attr">yan</span>: <span class="string">"焉咽阉烟淹盐严研蜒岩延言颜阎炎沿奄掩眼衍演艳堰燕厌砚雁唁彦焰宴谚验厣靥赝俨偃兖讠谳郾鄢芫菸崦恹闫阏洇湮滟妍嫣琰晏胭腌焱罨筵酽魇餍鼹"</span>,</div><div class="line">            <span class="attr">yang</span>: <span class="string">"殃央鸯秧杨扬佯疡羊洋阳氧仰痒养样漾徉怏泱炀烊恙蛘鞅"</span>,</div><div class="line">            <span class="attr">yao</span>: <span class="string">"邀腰妖瑶摇尧遥窑谣姚咬舀药要耀夭爻吆崾徭瀹幺珧杳曜肴鹞窈繇鳐"</span>,</div><div class="line">            <span class="attr">ye</span>: <span class="string">"椰噎耶爷野冶也页掖业叶曳腋夜液谒邺揶馀晔烨铘"</span>,</div><div class="line">            <span class="attr">yi</span>: <span class="string">"一壹医揖铱依伊衣颐夷遗移仪胰疑沂宜姨彝椅蚁倚已乙矣以艺抑易邑屹亿役臆逸肄疫亦裔意毅忆义益溢诣议谊译异翼翌绎刈劓佾诒圪圯埸懿苡薏弈奕挹弋呓咦咿噫峄嶷猗饴怿怡悒漪迤驿缢殪贻旖熠钇镒镱痍瘗癔翊衤蜴舣羿翳酏黟"</span>,</div><div class="line">            <span class="attr">yin</span>: <span class="string">"茵荫因殷音阴姻吟银淫寅饮尹引隐印胤鄞堙茚喑狺夤氤铟瘾蚓霪龈"</span>,</div><div class="line">            <span class="attr">ying</span>: <span class="string">"英樱婴鹰应缨莹萤营荧蝇迎赢盈影颖硬映嬴郢茔莺萦撄嘤膺滢潆瀛瑛璎楹鹦瘿颍罂"</span>,</div><div class="line">            <span class="attr">yo</span>: <span class="string">"哟唷"</span>,</div><div class="line">            <span class="attr">yong</span>: <span class="string">"拥佣臃痈庸雍踊蛹咏泳涌永恿勇用俑壅墉慵邕镛甬鳙饔"</span>,</div><div class="line">            <span class="attr">you</span>: <span class="string">"幽优悠忧尤由邮铀犹油游酉有友右佑釉诱又幼卣攸侑莸呦囿宥柚猷牖铕疣蝣鱿黝鼬"</span>,</div><div class="line">            <span class="attr">yu</span>: <span class="string">"迂淤于盂榆虞愚舆余俞逾鱼愉渝渔隅予娱雨与屿禹宇语羽玉域芋郁吁遇喻峪御愈欲狱育誉浴寓裕预豫驭禺毓伛俣谀谕萸蓣揄喁圄圉嵛狳饫庾阈妪妤纡瑜昱觎腴欤於煜燠聿钰鹆瘐瘀窳蝓竽舁雩龉"</span>,</div><div class="line">            <span class="attr">yuan</span>: <span class="string">"鸳渊冤元垣袁原援辕园员圆猿源缘远苑愿怨院塬沅媛瑗橼爰眢鸢螈鼋"</span>,</div><div class="line">            <span class="attr">yue</span>: <span class="string">"曰约越跃钥岳粤月悦阅龠樾刖钺"</span>,</div><div class="line">            <span class="attr">yun</span>: <span class="string">"耘云郧匀陨允运蕴酝晕韵孕郓芸狁恽纭殒昀氲"</span>,</div><div class="line">            <span class="attr">za</span>: <span class="string">"匝砸杂拶咂"</span>,</div><div class="line">            <span class="attr">zai</span>: <span class="string">"栽哉灾宰载再在咱崽甾"</span>,</div><div class="line">            <span class="attr">zan</span>: <span class="string">"攒暂赞瓒昝簪糌趱錾"</span>,</div><div class="line">            <span class="attr">zang</span>: <span class="string">"赃脏葬奘戕臧"</span>,</div><div class="line">            <span class="attr">zao</span>: <span class="string">"遭糟凿藻枣早澡蚤躁噪造皂灶燥唣缫"</span>,</div><div class="line">            <span class="attr">ze</span>: <span class="string">"责择则泽仄赜啧迮昃笮箦舴"</span>,</div><div class="line">            <span class="attr">zei</span>: <span class="string">"贼"</span>,</div><div class="line">            <span class="attr">zen</span>: <span class="string">"怎谮"</span>,</div><div class="line">            <span class="attr">zeng</span>: <span class="string">"增憎曾赠缯甑罾锃"</span>,</div><div class="line">            <span class="attr">zha</span>: <span class="string">"扎喳渣札轧铡闸眨栅榨咋乍炸诈揸吒咤哳怍砟痄蚱齄"</span>,</div><div class="line">            <span class="attr">zhai</span>: <span class="string">"摘斋宅窄债寨砦"</span>,</div><div class="line">            <span class="attr">zhan</span>: <span class="string">"瞻毡詹粘沾盏斩辗崭展蘸栈占战站湛绽谵搌旃"</span>,</div><div class="line">            <span class="attr">zhang</span>: <span class="string">"樟章彰漳张掌涨杖丈帐账仗胀瘴障仉鄣幛嶂獐嫜璋蟑"</span>,</div><div class="line">            <span class="attr">zhao</span>: <span class="string">"招昭找沼赵照罩兆肇召爪诏棹钊笊"</span>,</div><div class="line">            <span class="attr">zhe</span>: <span class="string">"遮折哲蛰辙者锗蔗这浙谪陬柘辄磔鹧褚蜇赭"</span>,</div><div class="line">            <span class="attr">zhen</span>: <span class="string">"珍斟真甄砧臻贞针侦枕疹诊震振镇阵缜桢榛轸赈胗朕祯畛鸩"</span>,</div><div class="line">            <span class="attr">zheng</span>: <span class="string">"蒸挣睁征狰争怔整拯正政帧症郑证诤峥钲铮筝"</span>,</div><div class="line">            <span class="attr">zhi</span>: <span class="string">"芝枝支吱蜘知肢脂汁之织职直植殖执值侄址指止趾只旨纸志挚掷至致置帜峙制智秩稚质炙痔滞治窒卮陟郅埴芷摭帙忮彘咫骘栉枳栀桎轵轾攴贽膣祉祗黹雉鸷痣蛭絷酯跖踬踯豸觯"</span>,</div><div class="line">            <span class="attr">zhong</span>: <span class="string">"中盅忠钟衷终种肿重仲众冢锺螽舂舯踵"</span>,</div><div class="line">            <span class="attr">zhou</span>: <span class="string">"舟周州洲诌粥轴肘帚咒皱宙昼骤啄着倜诹荮鬻纣胄碡籀舳酎鲷"</span>,</div><div class="line">            <span class="attr">zhu</span>: <span class="string">"珠株蛛朱猪诸诛逐竹烛煮拄瞩嘱主著柱助蛀贮铸筑住注祝驻伫侏邾苎茱洙渚潴驺杼槠橥炷铢疰瘃蚰竺箸翥躅麈"</span>,</div><div class="line">            <span class="attr">zhua</span>: <span class="string">"抓"</span>,</div><div class="line">            <span class="attr">zhuai</span>: <span class="string">"拽"</span>,</div><div class="line">            <span class="attr">zhuan</span>: <span class="string">"专砖转撰赚篆抟啭颛"</span>,</div><div class="line">            <span class="attr">zhuang</span>: <span class="string">"桩庄装妆撞壮状丬"</span>,</div><div class="line">            <span class="attr">zhui</span>: <span class="string">"椎锥追赘坠缀萑骓缒"</span>,</div><div class="line">            <span class="attr">zhun</span>: <span class="string">"谆准"</span>,</div><div class="line">            <span class="attr">zhuo</span>: <span class="string">"捉拙卓桌琢茁酌灼浊倬诼廴蕞擢啜浞涿杓焯禚斫"</span>,</div><div class="line">            <span class="attr">zi</span>: <span class="string">"兹咨资姿滋淄孜紫仔籽滓子自渍字谘嵫姊孳缁梓辎赀恣眦锱秭耔笫粢觜訾鲻髭"</span>,</div><div class="line">            <span class="attr">zong</span>: <span class="string">"鬃棕踪宗综总纵腙粽"</span>,</div><div class="line">            <span class="attr">zou</span>: <span class="string">"邹走奏揍鄹鲰"</span>,</div><div class="line">            <span class="attr">zu</span>: <span class="string">"租足卒族祖诅阻组俎菹啐徂驵蹴"</span>,</div><div class="line">            <span class="attr">zuan</span>: <span class="string">"钻纂攥缵"</span>,</div><div class="line">            <span class="attr">zui</span>: <span class="string">"嘴醉最罪"</span>,</div><div class="line">            <span class="attr">zun</span>: <span class="string">"尊遵撙樽鳟"</span>,</div><div class="line">            <span class="attr">zuo</span>: <span class="string">"昨左佐柞做作坐座阝阼胙祚酢"</span>,</div><div class="line">            <span class="attr">cou</span>: <span class="string">"薮楱辏腠"</span>,</div><div class="line">            <span class="attr">nang</span>: <span class="string">"攮哝囔馕曩"</span>,</div><div class="line">            <span class="attr">o</span>: <span class="string">"喔"</span>,</div><div class="line">            <span class="attr">dia</span>: <span class="string">"嗲"</span>,</div><div class="line">            <span class="attr">chuai</span>: <span class="string">"嘬膪踹"</span>,</div><div class="line">            <span class="attr">cen</span>: <span class="string">"岑涔"</span>,</div><div class="line">            <span class="attr">diu</span>: <span class="string">"铥"</span>,</div><div class="line">            <span class="attr">nou</span>: <span class="string">"耨"</span>,</div><div class="line">            <span class="attr">fou</span>: <span class="string">"缶"</span>,</div><div class="line">            <span class="attr">bia</span>: <span class="string">"髟"</span></div><div class="line">    &#125;;</div></pre></td></tr></table></figure>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">getPing(name,py);</div><div class="line">name 为 中文字符串</div><div class="line">py 为 要转为拼音字符串</div></pre></td></tr></table></figure>
+
+      
+      
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/01/07/中文转拼音/">中文转拼音</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 明月寒 的个人博客">明月寒</a></p>
+        <p><span>发布时间:</span>2016年01月07日 - 11时37分</p>
+        <p><span>最后更新:</span>2017年07月17日 - 16时01分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/01/07/中文转拼音/" title="中文转拼音">http://www.33u3.com/2016/01/07/中文转拼音/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://www.33u3.com/2016/01/07/中文转拼音/　　作者: 明月寒" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2016/01/08/扩展jQuery/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          扩展jQuery
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/01/04/移动端问题收集/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前端问题收集--移动端</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#中文转拼音"><span class="toc-number">1.</span> <span class="toc-text">中文转拼音</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#拼音的库"><span class="toc-number">2.</span> <span class="toc-text">拼音的库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用方法"><span class="toc-number">3.</span> <span class="toc-text">使用方法</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+    <style>
+        .toc {
+            white-space: nowrap;
+            overflow-x: hidden;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $(".toc li a").mouseover(function() {
+                var title = $(this).attr('href');
+                $(this).attr("title", title);
+            });
+        })
+    </script>
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <section class="youyan" id="comments">
+  <div id="uyan_frame"></div>
+  <script src="http://v2.uyan.cc/code/uyan.js?uid=2079352"></script>
+</section>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/01/08/扩展jQuery/" title="上一篇: 扩展jQuery">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2016/01/04/移动端问题收集/" title="下一篇: 前端问题收集--移动端">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/01/18/Css3特效-给字上色/">纯Css3的圆形进度条</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/18/纯Css3的圆形进度条/">纯Css3的圆形进度条</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/08/扩展jQuery/">扩展jQuery</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/07/中文转拼音/">中文转拼音</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/04/移动端问题收集/">前端问题收集--移动端</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 明月寒
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="http://www.33u3.com" target="_blank">jxmyh</a> by 明月寒
+            </div>
+        </div>
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?ce47ded8de408184d94d5ba175a92a2f";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 30;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
