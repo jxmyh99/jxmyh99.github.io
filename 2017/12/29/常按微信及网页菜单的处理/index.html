@@ -3,19 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>扩展jQuery | 小白明月</title>
+  <title>常按微信及网页菜单处理 | 小白明月</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="jQuery是当今应用最为广泛的一个JavaScript框架。它简化了HTML文件的遍历、事件处理、动画、Ajax互动等操作，从而使开发人员可以更加容易、便捷地开发出强大的静态和动态网页。阅读本的笔记">
-<meta name="keywords" content="jQuery,javascript">
+  <meta name="description" content="接到需求要在微信上制作个常按一个指纹型的图片，过几秒就展示一个二维码图片。让微信可以自动识别二维码">
+<meta name="keywords" content="css3,微信">
 <meta property="og:type" content="article">
-<meta property="og:title" content="扩展jQuery">
-<meta property="og:url" content="http://www.33u3.com/2016/01/08/扩展jQuery/index.html">
+<meta property="og:title" content="常按微信及网页菜单处理">
+<meta property="og:url" content="http://www.33u3.com/2017/12/29/常按微信及网页菜单的处理/index.html">
 <meta property="og:site_name" content="小白明月">
-<meta property="og:description" content="jQuery是当今应用最为广泛的一个JavaScript框架。它简化了HTML文件的遍历、事件处理、动画、Ajax互动等操作，从而使开发人员可以更加容易、便捷地开发出强大的静态和动态网页。阅读本的笔记">
-<meta property="og:updated_time" content="2017-07-19T05:19:23.000Z">
+<meta property="og:description" content="接到需求要在微信上制作个常按一个指纹型的图片，过几秒就展示一个二维码图片。让微信可以自动识别二维码">
+<meta property="og:image" content="http://qiniu.33u3.com/1514530700826.gif?imageView2/0/q/75|watermark/2/text/d3d3LjMzdTMuY29t/font/5b6u6L2v6ZuF6buR/fontsize/500/fill/IzEwNjBFRQ==/dissolve/100/gravity/SouthWest/dx/10/dy/10|imageslim">
+<meta property="og:image" content="http://qiniu.33u3.com/wx.jpg?imageView2/0/q/75|watermark/2/text/d3d3LjMzdTMuY29t/font/5b6u6L2v6ZuF6buR/fontsize/500/fill/IzEwNjBFRQ==/dissolve/100/gravity/SouthWest/dx/10/dy/10|imageslim">
+<meta property="og:updated_time" content="2017-12-29T08:29:01.402Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="扩展jQuery">
-<meta name="twitter:description" content="jQuery是当今应用最为广泛的一个JavaScript框架。它简化了HTML文件的遍历、事件处理、动画、Ajax互动等操作，从而使开发人员可以更加容易、便捷地开发出强大的静态和动态网页。阅读本的笔记">
+<meta name="twitter:title" content="常按微信及网页菜单处理">
+<meta name="twitter:description" content="接到需求要在微信上制作个常按一个指纹型的图片，过几秒就展示一个二维码图片。让微信可以自动识别二维码">
+<meta name="twitter:image" content="http://qiniu.33u3.com/1514530700826.gif?imageView2/0/q/75|watermark/2/text/d3d3LjMzdTMuY29t/font/5b6u6L2v6ZuF6buR/fontsize/500/fill/IzEwNjBFRQ==/dissolve/100/gravity/SouthWest/dx/10/dy/10|imageslim">
   
     <link rel="alternative" href="/atom.xml" title="小白明月" type="application/atom+xml">
   
@@ -222,11 +225,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-扩展jQuery" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-常按微信及网页菜单的处理" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/01/08/扩展jQuery/" class="article-date">
-      <time datetime="2016-01-08T03:37:00.000Z" itemprop="datePublished">2016-01-08</time>
+      <a href="/2017/12/29/常按微信及网页菜单的处理/" class="article-date">
+      <time datetime="2017-12-29T08:12:00.000Z" itemprop="datePublished">2017-12-29</time>
 </a>
     </div>
   
@@ -239,7 +242,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      扩展jQuery
+      常按微信及网页菜单处理
     </h1>
   
 
@@ -248,13 +251,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/静心阅读/">静心阅读</a>
+    <a class="article-category-link" href="/categories/技术研究/">技术研究</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery/">jQuery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css3/">css3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微信/">微信</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -264,13 +267,21 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="第二章第一个插件"><a href="#第二章第一个插件" class="headerlink" title="第二章第一个插件"></a>第二章第一个插件</h2><h3 id="一个简单的插件"><a href="#一个简单的插件" class="headerlink" title="一个简单的插件"></a>一个简单的插件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*此插件为模仿placeholder功能。他这个插件，是通过修改className和value来模拟placeholder功能。但这里会有个问题，就是，当你把提交表单的时候。在没有改动表单value值的时候，这个用来模拟placeholder功能的value值会被一起提交上去。ps:此插件只做功能展示之用，不可用于真实项目之中。*/</span></div><div class="line"><span class="comment">/*$.fn声明插件函数 watemark为插件名称 options为设置选项*/</span></div><div class="line">$.fn.watemark = <span class="function"><span class="keyword">function</span>(<span class="params">options</span>)</span>&#123;</div><div class="line">    <span class="comment">/*设置选项*/</span></div><div class="line">    options = $.extend(&#123;<span class="attr">watermarkClass</span> : <span class="string">'watermark'</span>&#125;, options || &#123;&#125;);</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.focus(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="comment">/*当字体获取焦点时*/</span></div><div class="line">        <span class="keyword">var</span> field = $(<span class="keyword">this</span>);</div><div class="line">        <span class="comment">/*如果当前显示的是点位符*/</span></div><div class="line">        <span class="keyword">if</span>(field.val() == field.attr(<span class="string">'title'</span>))&#123;</div><div class="line">            field.val(<span class="string">''</span>).removeClass(options.watermarkClass);</div><div class="line">        &#125;</div><div class="line">    &#125;).blur(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="comment">/*失去焦点的时候*/</span></div><div class="line">        <span class="keyword">var</span> field = $(<span class="keyword">this</span>);</div><div class="line">        <span class="comment">/*判断是否为空*/</span></div><div class="line">        <span class="keyword">if</span>(field.val() == <span class="string">''</span>)&#123;</div><div class="line">            field.val(field.attr(<span class="string">'title'</span>)).addClass(options.watermarkClass)</div><div class="line">        &#125;</div><div class="line">    &#125;).blur();</div><div class="line">    <span class="comment">/*最后的.blur()为初始化字段*/</span></div><div class="line">&#125;</div><div class="line"><span class="comment">/*清除水印，即在提交的时候清除模拟placeholder功能的value*/</span></div><div class="line">$.fn.clearWatermark = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.each(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="keyword">var</span> field = $(<span class="keyword">this</span>);</div><div class="line">        <span class="keyword">if</span>(field.val() == field.attr(<span class="string">'title'</span>))&#123;</div><div class="line">            field.val();</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">&#125;</div><div class="line"><span class="comment">/*使用方法*/</span></div><div class="line">$(<span class="string">'input.wmark'</span>).watemark();</div></pre></td></tr></table></figure>
-<h2 id="第三章-选择器和过滤器"><a href="#第三章-选择器和过滤器" class="headerlink" title="第三章 选择器和过滤器"></a>第三章 选择器和过滤器</h2><h3 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h3><p>可以查看<a href="http://www.w3school.com.cn/jquery/jquery_ref_selectors.asp" target="_blank" rel="external">http://www.w3school.com.cn/jquery/jquery_ref_selectors.asp</a></p>
-<h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h3><p>可以查看<a href="http://www.w3school.com.cn/jquery/jquery_ref_selectors.asp" target="_blank" rel="external">http://www.w3school.com.cn/jquery/jquery_ref_selectors.asp</a></p>
-<h3 id="不同版本jQuery的选择器兼容"><a href="#不同版本jQuery的选择器兼容" class="headerlink" title="不同版本jQuery的选择器兼容"></a>不同版本jQuery的选择器兼容</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> userCreatePseudo = !!$.expr.createPseudo;<span class="comment">//jQuery 1.8+</span></div><div class="line"><span class="keyword">if</span>(userCreatePseudo)&#123;</div><div class="line">    $.expr.pseudos.XXX = $.expr.createPseudo(<span class="function"><span class="keyword">function</span>(<span class="params">param</span>)</span>&#123;</div><div class="line">        jQuery <span class="number">1.8</span>+</div><div class="line">    &#125;)</div><div class="line">&#125;<span class="keyword">else</span>&#123;</div><div class="line">    $.expr.filters.xxx = <span class="function"><span class="keyword">function</span>(<span class="params">element,i,match</span>)</span>&#123;</div><div class="line">        jQuery <span class="number">1.7</span>-</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="添加一个精确内容匹配选择器"><a href="#添加一个精确内容匹配选择器" class="headerlink" title="添加一个精确内容匹配选择器"></a>添加一个精确内容匹配选择器</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">allText</span>(<span class="params">element</span>)</span>&#123;</div><div class="line">    js返回element的文本</div><div class="line">    这里注意element.textContent返回的是带空格文本，而innerText和text都不会返回 空格文本，他们也不会相等</div><div class="line">    <span class="keyword">return</span> element.textContent || element.innerText || $.text([element]);</div><div class="line">&#125;</div><div class="line">$.expr.pseudos.content = $.expr.createPseudo(<span class="function"><span class="keyword">function</span>(<span class="params">text</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">element</span>)</span>&#123;</div><div class="line">        返回一个布尔值</div><div class="line">        <span class="keyword">return</span> allText(element) == text;</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<h3 id="添加元素类型选择器"><a href="#添加元素类型选择器" class="headerlink" title="添加元素类型选择器"></a>添加元素类型选择器</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">    ret</div><div class="line">ol和ul的列表的选择器</div><div class="line">$.expr.filters.list = <span class="function"><span class="keyword">function</span>(<span class="params">element</span>)</span>&#123;urn /^(ol|ul)$/i.test(element.nodeName);</div><div class="line">&#125;</div><div class="line">b,em和strong加重标签类型选择器</div><div class="line">$.expr.filters.emphasis = <span class="function"><span class="keyword">function</span>(<span class="params">element</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="regexp">/^(b|em|strong)$/i</span>.test(element.nodeName);</div><div class="line">&#125;</div><div class="line">使用方法</div><div class="line">$(<span class="string">"element :list"</span>)或者$(<span class="string">"element :emphasis"</span>)</div></pre></td></tr></table></figure>
+        <!-- 在移动端有很坑要填，这里只是收集我在工作中遇到的一些移动端的坑，在此文章中记录下，也希望能给后来人解决问题
+　　** 前端知识体系：**<Excerpt in index | 首页摘要> 
++ more -->
+<the rest="" of="" contents="" |="" 余下全文="">
 
+<h3 id="产品给的演示"><a href="#产品给的演示" class="headerlink" title="产品给的演示"></a>产品给的演示</h3><p><img src="http://qiniu.33u3.com/1514530700826.gif?imageView2/0/q/75|watermark/2/text/d3d3LjMzdTMuY29t/font/5b6u6L2v6ZuF6buR/fontsize/500/fill/IzEwNjBFRQ==/dissolve/100/gravity/SouthWest/dx/10/dy/10|imageslim" alt=""></p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>通过gif图片可整理出流程如下：<br><img src="http://qiniu.33u3.com/wx.jpg?imageView2/0/q/75|watermark/2/text/d3d3LjMzdTMuY29t/font/5b6u6L2v6ZuF6buR/fontsize/500/fill/IzEwNjBFRQ==/dissolve/100/gravity/SouthWest/dx/10/dy/10|imageslim" alt=""></p>
+<h3 id="难点解决"><a href="#难点解决" class="headerlink" title="难点解决"></a>难点解决</h3><p>1.阻止弹出菜单<br>1.css方案<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">//user-select 设置或检索是否允许用户选中文本。</div><div class="line">/*</div><div class="line">none：文本不能被选择</div><div class="line">text：可以选择文本</div><div class="line">all：当所有内容作为一个整体时可以被选择。如果双击或者在上下文上点击子元素，那么被选择的部分将是以该子元素向上回溯的最高祖先元素。</div><div class="line">element：可以选择文本，但选择范围受元素边界的约束</div><div class="line">*/</div><div class="line">-webkit-user-select:none;</div><div class="line">//touch-callout  当你触摸并按住触摸目标时候，禁止或显示系统默认菜单。</div><div class="line">/*</div><div class="line">none：系统默认菜单被禁用</div><div class="line">default：系统默认菜单不被禁用</div><div class="line">*/</div><div class="line">-webkit-touch-callout:none;</div><div class="line">//pointer-events 设置或检索在何时成为属性事件的target</div><div class="line">/*</div><div class="line">pointer-events：auto | none | visiblepainted | visiblefill | visiblestroke | visible | painted | fill | stroke | all</div><div class="line">默认值：auto</div><div class="line">auto：与pointer-events属性未指定时的表现效果相同。在svg内容上与visiblepainted值相同</div><div class="line">none：元素永远不会成为鼠标事件的target。但是，当其后代元素的pointer-events属性指定其他值时，鼠标事件可以指向后代元素，在这种情况下，鼠标事件将在捕获或冒泡阶触发父元素的事件侦听器。</div><div class="line">*/</div><div class="line">pointer-events:none;</div></pre></td></tr></table></figure></p>
+<p>这三项设置,第一项设置要小心。具体在后面分析。<br>2.js方案<br>contextmenu事件是在元素中用户右击鼠标时触发并打开上下文菜单<br>利用阻止默认行为来阻止菜单<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">dom.addEventListener(<span class="string">'contextmenu'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">    e.preventDefault();</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>2.解决常按图片出现菜单的问题<br>我的方案是使用div加带背景图的方案来解决</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#box</span>&#123;</div><div class="line">    <span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">    <span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">    <span class="attribute">background</span>:<span class="built_in">url</span>(<span class="string">'图片'</span>) center no-repeat;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>3.看上去常按。其实是touchstart后就把二维码图片给显示了。长按的其它是二维码图片。所以才会触发了微信自动识别图片的功能</p>
+<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>使用js方案最合理。</p>
+</the>
       
       
         <div class="page-reward">
@@ -325,13 +336,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/01/08/扩展jQuery/">扩展jQuery</a></p>
+        <p><span>本文标题:</span><a href="/2017/12/29/常按微信及网页菜单的处理/">常按微信及网页菜单处理</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 明月寒 的个人博客">明月寒</a></p>
-        <p><span>发布时间:</span>2016年01月08日 - 11时37分</p>
-        <p><span>最后更新:</span>2017年07月19日 - 13时19分</p>
+        <p><span>发布时间:</span>2017年12月29日 - 16时12分</p>
+        <p><span>最后更新:</span>2017年12月29日 - 16时29分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/01/08/扩展jQuery/" title="扩展jQuery">http://www.33u3.com/2016/01/08/扩展jQuery/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://www.33u3.com/2016/01/08/扩展jQuery/　　作者: 明月寒" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/12/29/常按微信及网页菜单的处理/" title="常按微信及网页菜单处理">http://www.33u3.com/2017/12/29/常按微信及网页菜单的处理/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://www.33u3.com/2017/12/29/常按微信及网页菜单的处理/　　作者: 明月寒" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -344,18 +355,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/01/18/纯Css3的圆形进度条/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          纯Css3的圆形进度条
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/01/07/中文转拼音/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">中文转拼音</div>
+    <a href="/2016/05/23/Css3特效--Loading条/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Css3特效--Loading条</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -366,7 +368,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第二章第一个插件"><span class="toc-number">1.</span> <span class="toc-text">第二章第一个插件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一个简单的插件"><span class="toc-number">1.1.</span> <span class="toc-text">一个简单的插件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三章-选择器和过滤器"><span class="toc-number">2.</span> <span class="toc-text">第三章 选择器和过滤器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本选择器"><span class="toc-number">2.1.</span> <span class="toc-text">基本选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#伪类选择器"><span class="toc-number">2.2.</span> <span class="toc-text">伪类选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#不同版本jQuery的选择器兼容"><span class="toc-number">2.3.</span> <span class="toc-text">不同版本jQuery的选择器兼容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加一个精确内容匹配选择器"><span class="toc-number">2.4.</span> <span class="toc-text">添加一个精确内容匹配选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加元素类型选择器"><span class="toc-number">2.5.</span> <span class="toc-text">添加元素类型选择器</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#产品给的演示"><span class="toc-number">1.</span> <span class="toc-text">产品给的演示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">2.</span> <span class="toc-text">分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#难点解决"><span class="toc-number">3.</span> <span class="toc-text">难点解决</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结："><span class="toc-number">4.</span> <span class="toc-text">总结：</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -439,13 +441,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/01/18/纯Css3的圆形进度条/" title="上一篇: 纯Css3的圆形进度条">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/01/07/中文转拼音/" title="下一篇: 中文转拼音">
+            <a href="/2016/05/23/Css3特效--Loading条/" title="下一篇: Css3特效--Loading条">
                 <i class="fa fa-angle-right"></i>
             </a>
         
